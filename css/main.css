@@ -1,7 +1,4 @@
-body{
-    color: #ffffff;
-    color: black;
-}
+
 .dark-mode {
     background: #282828;
     color: #ff2e88;
@@ -11,4 +8,3 @@ button {
     margin-top: 2%;
     margin-left: 70%;
 }
-

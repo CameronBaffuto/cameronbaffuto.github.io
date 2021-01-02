@@ -18,7 +18,8 @@ canvas {
 }
 </style>
 </head>
-<body onload="startGame()"><nav class="navbar bg-dark navbar-dark navbar-expand-md">
+<body>
+    <nav class="navbar bg-dark navbar-dark navbar-expand-md">
     <a class="navbar-brand" href="../index.html">CB</a>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar1">
         <span class="navbar-toggler-icon"></span>
@@ -51,7 +52,7 @@ canvas {
 </nav>
     
 <div class="container mt-3">
-<br>
+    <button onclick="startGame()">Start Game</button>
 <button onmousedown="accelerate(-0.5)" onmouseup="accelerate(0.10)">ACCELERATE</button>
 <p>Use the ACCELERATE button to stay in the air</p>
 <p>How long can you stay alive?</p>

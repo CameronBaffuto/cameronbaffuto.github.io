@@ -18,12 +18,44 @@ canvas {
 }
 </style>
 </head>
-<body onload="startGame()">
-
+<body onload="startGame()"><nav class="navbar bg-dark navbar-dark navbar-expand-md">
+    <a class="navbar-brand" href="../index.html">CB</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar1">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbar1">
+        <ul class="navbar-nav mr-auto">
+            <li class="nav-item active">
+                <a class="nav-link" href="../index.html">Home</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="../menu/menu.html">Menu</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="../fifaRandom/fifa.html">Fifa Randomizer</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="../christmas/christmas.html">Christmas</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="../halloween/halloween.html">Halloween</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="../game/blockGame.html">Block Game</a>
+            </li>
+            <li class="nav-item float-md-right">
+                <button type="button" class="btn btn-warning"  onclick="myFunction()">Dark mode</button>
+            </li>
+        </ul>
+    </div>
+</nav>
+    
+<div class="container mt-3">
 <br>
 <button onmousedown="accelerate(-0.5)" onmouseup="accelerate(0.10)">ACCELERATE</button>
 <p>Use the ACCELERATE button to stay in the air</p>
 <p>How long can you stay alive?</p>
 <button onclick="reload()">Restart</button>
+</div>    
 </body>
 </html>

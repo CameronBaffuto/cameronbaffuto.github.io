@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+    <title>Covid Symptoms</title>
+</head>
+<body>
+<nav class="navbar bg-dark navbar-dark navbar-expand-md">
+    <a class="navbar-brand" href="../index.html">CB</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar1">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbar1">
+        <ul class="navbar-nav mr-auto">
+            <li class="nav-item active">
+                <a class="nav-link" href="../index.html">Home</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="../menu/menu.html">Menu</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="../fifaRandom/fifa.html">Fifa Randomizer</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="../christmas/christmas.html">Christmas</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="../halloween/halloween.html">Halloween</a>
+            </li>
+            <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="../game/game.html">Games</a>
+                <span class="caret"></span></a>
+                <ul class="dropdown-menu">
+                <li class="nav-item"><a href="#">Game 1</a></li>
+                <li class="nav-item"><a href="#">Game 2</a></li>
+                <li class="nav-item"><a href="#">Game 3</a></li>
+                </ul>
+            </li>
+            <li class="nav-item float-md-right">
+                <button type="button" class="btn btn-warning"  onclick="myFunction()">Dark mode</button>
+            </li>
+        </ul>
+    </div>
+</nav>
+
+<div class="container mt-3">
+    <h4 class="text-center">Covid Symptom Checker</h4>
+    <div data-cdc-widget='healthBot' data-cdc-theme='theme1' class='cdc-widget-color-white'  data-cdc-language='en-us'></div>
+</div>
+<script src='https://t.cdc.gov/1M1B'></script>
+</body>
+</html>

@@ -18,5 +18,24 @@ function GetSelected() {
     }
 
     function launchVAE() {
-        alert(selected);
+        alert("'" + selected.join(",") + "'");
     }
+
+var template = "";
+
+function GetTemplateID() {
+    com.veeva.clm.getApprovedDocument("https://vvagency-bionicalus.veevavault.com","38",GetFragmentID);
+}
+
+function GetFragmentID(result) {
+    template=result.Approved_Document_vod__c.ID;
+    com.veeva.clm.getApprovedDocument("https://vvagency-bionicalus.veevavault.com","36",SendEmail);
+
+}
+
+function SendEmail(result) {
+    com.veeva.clm.launchApprovedEmail(template,result.Approved_Document_vod__c.ID,finalCall)
+}
+
+function finalCall() {
+}

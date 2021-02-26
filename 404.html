@@ -45,7 +45,11 @@
 
         #hero h2 {
             color: rgba(255, 255, 255, 0.6);
-            margin-bottom: 50px;
+            font-size: 24px;
+        }
+
+        #hero h4 {
+            color: rgba(255, 255, 255, 0.6);
             font-size: 24px;
         }
 
@@ -73,12 +77,6 @@
 
     </style>
 
-    <script>
-        window.onload = function() {
-            document.getElementById("my_audio").play();
-        }
-    </script>
-
     <title>404</title>
 </head>
 <body>
@@ -93,9 +91,10 @@
             <div class="col-lg-6 order-1 order-lg-2 hero-img" data-aos="zoom-in" data-aos-delay="200">
                 <h1>404</h1>
                 <h2>Looks like you're lost, Queen...</h2>
+                <h4>Listen to something nice while you're here</h4>
+                <audio controls="controls"><source src="resources/DancingQueen.mp3"/></audio>
                 <div class="d-lg-flex">
-                    <a href="index.html" class="btn-get-started scrollto">Go Home</a>
-                    <audio id="my_audio" src="resources/DancingQueen.mp3" loop="loop"></audio>
+                    <a href="index.html" class="btn-get-started">Go Home</a>
                 </div>
             </div>
         </div>
@@ -104,5 +103,12 @@
 </section>
 <br>
 <br>
+<script>
+    window.addEventListener("DOMContentLoaded", event => {
+        const audio = document.querySelector("audio");
+        audio.volume = 0.2;
+        audio.play();
+    });
+</script>
 </body>
 </html>

@@ -12,34 +12,23 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 
-<!--    <style>-->
-<!--        @media only screen and (orientation:landscape){-->
-<!--            html {-->
-<!--                transform: rotate(-90deg);-->
-<!--                transform-origin: left top;-->
-<!--                width: 100vh;-->
-<!--                overflow-x: hidden;-->
-<!--                position: absolute;-->
-<!--                top: 100%;-->
-<!--                left: 0;-->
-<!--            }-->
-<!--        }-->
-<!--    </style>-->
+    <style>
+        html {
+            transform: rotate(-90deg);
+            transform-origin: left top;
+            width: 100vh;
+            overflow-x: hidden;
+            position: absolute;
+            top: 100%;
+            left: 0;
+        }
 
- <script>
+    </style>
 
-     function lock(orientation) {
-         if (document.documentElement.requestFullscreen) {
-             document.documentElement.requestFullscreen();
-         } else if (document.documentElement.mozRequestFullscreen) {
-             document.documentElement.mozRequestFullscreen();
-         } else if (document.documentElement.webkitRequestFullscreen) {
-             document.documentElement.webkitRequestFullscreen();
-         } else {
-             (document.documentElement.msRequestFullscreen();
-            }
-
-         screen.orientation.lock(orientation);
+ <script> {
+        function rotate() {
+            document.getElementById('rotate').className = "html";
+        }
      }
 
  </script>
@@ -81,7 +70,7 @@
                 </ul>
             </li>
             <li class="nav-item float-md-right">
-                <button type="button" class="btn btn-warning" onclick="myFunction()">Dark mode</button>
+                <button type="button" class="btn btn-warning" id="rotate" onclick="rotate()">Rotate</button>
             </li>
         </ul>
     </div>
@@ -93,7 +82,7 @@
     <hr class="my-4">
     <p>It uses utility classes for typography and spacing to space content out within the larger container.</p>
     <p class="lead">
-        <a class="btn btn-primary btn-lg" role="button" onclick="lock('portrait')">Lock</a>
+        <button type="button" class="btn btn-warning" onclick="myFunction()">Dark mode</button>
     </p>
 </div>
 <div class="container">

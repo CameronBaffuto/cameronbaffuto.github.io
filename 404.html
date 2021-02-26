@@ -18,13 +18,88 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 
+    <style>
+
+        img {
+            border-radius: 10%;
+        }
+        #hero {
+            width: 100%;
+            height: 100vh;
+            background: #37517e;
+        }
+
+        #hero .container {
+            padding-top: 72px;
+        }
+
+        #hero h1 {
+            margin: 0 0 10px 0;
+            font-size: 48px;
+            font-weight: 700;
+            line-height: 56px;
+            color: #fff;
+        }
+
+        #hero h2 {
+            color: rgba(255, 255, 255, 0.6);
+            margin-bottom: 50px;
+            font-size: 24px;
+        }
+
+        #hero .btn-get-started {
+            font-family: "Jost", sans-serif;
+            font-weight: 500;
+            font-size: 16px;
+            letter-spacing: 1px;
+            display: inline-block;
+            padding: 10px 28px 11px 28px;
+            border-radius: 50px;
+            transition: 0.5s;
+            margin: 10px 0 0 0;
+            color: #fff;
+            background: #47b2e4;
+        }
+
+        #hero .btn-get-started:hover {
+            background: #209dd8;
+        }
+
+        #hero .animated {
+            animation: up-down 2s ease-in-out infinite alternate-reverse both;
+        }
+
+    </style>
+
+    <script>
+        window.onload = function() {
+            document.getElementById("my_audio").play();
+        }
+    </script>
+
     <title>404</title>
 </head>
 <body>
 
-<div class="container mt-3">
-    <h1 class="text-center">Page Not Found</h1>
-</div>
+<section id="hero" class="d-flex align-items-center">
+
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-6 d-flex flex-column justify-content-center pt-4 pt-lg-0 order-2 order-lg-1" data-aos="fade-up" data-aos-delay="200">
+                <img src="resources/abba.jpg" height="100%" width="100%" class="img-fluid animated" alt="">
+            </div>
+            <div class="col-lg-6 order-1 order-lg-2 hero-img" data-aos="zoom-in" data-aos-delay="200">
+                <h1>404</h1>
+                <h2>Looks like you're lost, Queen...</h2>
+                <div class="d-lg-flex">
+                    <a href="index.html" class="btn-get-started scrollto">Go Home</a>
+                    <audio id="my_audio" src="resources/DancingQueen.mp3" loop="loop"></audio>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</section>
 
 </body>
 </html>

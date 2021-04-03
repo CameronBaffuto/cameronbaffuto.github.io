@@ -29,37 +29,36 @@
 
         /* ---- button ---- */
 
-        .button {
-            display: inline-block;
-            padding: 0.5em 1.0em;
-            background: #EEE;
-            border: none;
-            border-radius: 7px;
-            background-image: linear-gradient( to bottom, hsla(0, 0%, 0%, 0), hsla(0, 0%, 0%, 0.2) );
-            color: #222;
-            font-family: sans-serif;
-            font-size: 16px;
-            text-shadow: 0 1px white;
-            cursor: pointer;
-        }
+        /*.button {*/
+        /*    display: inline-block;*/
+        /*    padding: 0.5em 1.0em;*/
+        /*    background: #EEE;*/
+        /*    border: none;*/
+        /*    border-radius: 7px;*/
+        /*    background-image: linear-gradient( to bottom, hsla(0, 0%, 0%, 0), hsla(0, 0%, 0%, 0.2) );*/
+        /*    color: #222;*/
+        /*    font-family: sans-serif;*/
+        /*    font-size: 16px;*/
+        /*    text-shadow: 0 1px white;*/
+        /*    cursor: pointer;*/
+        /*}*/
 
-        .btn:hover {
+        .button:hover {
             background-color: #8CF;
             text-shadow: 0 1px hsla(0, 0%, 100%, 0.5);
             color: #222;
         }
 
-        .btn:active,
-        .btn.is-checked {
+        .button:active,
+        .button.is-checked {
             background-color: #8CF;
         }
 
-        .btn.is-checked {
+        .button.is-checked {
             color: white;
-            text-shadow: 0 -1px hsla(0, 0%, 0%, 0.8);
         }
 
-        .btn:active {
+        .button:active {
             box-shadow: inset 0 1px 10px hsla(0, 0%, 0%, 0.8);
         }
 
@@ -147,8 +146,8 @@
     <div class="filters">
 
         <div class="ui-group">
-            <div class="button-group btn-group">
-                <button class="button btn-primary" value = "Refresh" onclick="history.go(0)">Reset Filters</button>
+            <div class="button-group">
+                <button class="button btn btn-secondary" value = "Refresh" onclick="history.go(0)">Reset Filters</button>
             </div>
         </div>
 
@@ -167,64 +166,64 @@
         <div class="ui-group">
             <h3>Brand</h3>
             <div class="button-group " data-filter-group="brand">
-                <button class="btn btn-secondary is-checked" data-filter="">any</button>
-                <button class="btn btn-secondary" data-filter=".branded">Branded</button>
-                <button class="btn btn-secondary" data-filter=".unbranded">Unbranded</button>
+                <button class="button btn btn-secondary is-checked" data-filter="">any</button>
+                <button class="button btn btn-secondary" data-filter=".branded">Branded</button>
+                <button class="button btn btn-secondary" data-filter=".unbranded">Unbranded</button>
             </div>
         </div>
 
         <div class="ui-group">
             <h3>Type</h3>
             <div class="button-group " data-filter-group="type">
-                <button class="btn btn-secondary is-checked" data-filter="">any</button>
-                <button class="btn btn-secondary" data-filter=".brochure">Brochure</button>
-                <button class="btn btn-secondary" data-filter=".wallchart">Wallchart</button>
-                <button class="btn btn-secondary" data-filter=".postcard">Postcard</button>
+                <button class="button btn btn-secondary is-checked" data-filter="">any</button>
+                <button class="button btn btn-secondary" data-filter=".brochure">Brochure</button>
+                <button class="button btn btn-secondary" data-filter=".wallchart">Wallchart</button>
+                <button class="button btn btn-secondary" data-filter=".postcard">Postcard</button>
             </div>
         </div>
 
         <div class="ui-group">
             <h3>PDF Delivery</h3>
             <div class="button-group " data-filter-group="pdf">
-                <button class="btn btn-secondary is-checked" data-filter="">any</button>
-                <button class="btn btn-secondary" data-filter=".pdfyes">Yes</button>
-                <button class="btn btn-secondary" data-filter=".pdfno">No</button>
+                <button class="button btn btn-secondary is-checked" data-filter="">any</button>
+                <button class="button btn btn-secondary" data-filter=".pdfyes">Yes</button>
+                <button class="button btn btn-secondary" data-filter=".pdfno">No</button>
             </div>
         </div>
 
         <div class="ui-group">
             <h3>HCP Toggle</h3>
             <div class="button-group " data-filter-group="hcp">
-                <button class="btn btn-secondary is-checked" data-filter="">any</button>
-                <button class="btn btn-secondary" data-filter=".hcpyes">Yes</button>
-                <button class="btn btn-secondary" data-filter=".hpcno">No</button>
+                <button class="button btn btn-secondary is-checked" data-filter="">any</button>
+                <button class="button btn btn-secondary" data-filter=".hcpyes">Yes</button>
+                <button class="button btn btn-secondary" data-filter=".hpcno">No</button>
             </div>
         </div>
 
         <div class="ui-group">
             <h3>DSE Tabs</h3>
             <div class="button-group " data-filter-group="dse">
-                <button class="btn btn-secondary is-checked" data-filter="">any</button>
-                <button class="btn btn-secondary" data-filter=".dseyes">Yes</button>
-                <button class="btn btn-secondary" data-filter=".dseno">No</button>
+                <button class="button btn btn-secondary is-checked" data-filter="">any</button>
+                <button class="button btn btn-secondary" data-filter=".dseyes">Yes</button>
+                <button class="button btn btn-secondary" data-filter=".dseno">No</button>
             </div>
         </div>
 
         <div class="ui-group">
             <h3>Veeva Approved Email</h3>
             <div class="button-group " data-filter-group="vae">
-                <button class="btn btn-secondary is-checked" data-filter="">any</button>
-                <button class="btn btn-secondary" data-filter=".vaeyes">Yes</button>
-                <button class="btn btn-secondary" data-filter=".vaeno">No</button>
+                <button class="button btn btn-secondary is-checked" data-filter="">any</button>
+                <button class="button btn btn-secondary" data-filter=".vaeyes">Yes</button>
+                <button class="button btn btn-secondary" data-filter=".vaeno">No</button>
             </div>
         </div>
 
         <div class="ui-group">
             <h3>Email Customization UI</h3>
             <div class="button-group " data-filter-group="emailcustom">
-                <button class="btn btn-secondary is-checked" data-filter="">any</button>
-                <button class="btn btn-secondary" data-filter=".emailcustomyes">Yes</button>
-                <button class="btn btn-secondary" data-filter=".emailcustomno">No</button>
+                <button class="button btn btn-secondary is-checked" data-filter="">any</button>
+                <button class="button btn btn-secondary" data-filter=".emailcustomyes">Yes</button>
+                <button class="button btn btn-secondary" data-filter=".emailcustomno">No</button>
             </div>
         </div>
 
@@ -299,9 +298,8 @@
 <script src="https://unpkg.com/isotope-layout@3/dist/isotope.pkgd.min.js"></script>
 <script>
 
-    // init Isotope
     var $grid = $('.grid').isotope({
-        itemSelector: '.project',
+        itemSelector: '.project'
     });
 
     // store filter for each group
@@ -310,10 +308,10 @@
     $('.filters').on( 'click', '.button', function( event ) {
         var $button = $( event.currentTarget );
         // get group key
-        var $btnGroup = $button.parents('.button-group');
-        var filterGroup = $btnGroup.attr('data-filter-group');
+        var $buttonGroup = $button.parents('.button-group');
+        var filterGroup = $buttonGroup.attr('data-filter-group');
         // set filter for group
-        filters[ filterGroup ] = $btn.attr('data-filter');
+        filters[ filterGroup ] = $button.attr('data-filter');
         // combine filters
         var filterValue = concatValues( filters );
         // set filter for Isotope
@@ -325,8 +323,8 @@
         var $buttonGroup = $( buttonGroup );
         $buttonGroup.on( 'click', 'button', function( event ) {
             $buttonGroup.find('.is-checked').removeClass('is-checked');
-            var $btn = $( event.currentTarget );
-            $btn.addClass('is-checked');
+            var $button = $( event.currentTarget );
+            $button.addClass('is-checked');
         });
     });
 
@@ -338,6 +336,7 @@
         }
         return value;
     }
+
 
 </script>
 </body>

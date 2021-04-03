@@ -1,0 +1,135 @@
+body {
+    background-color: #eeeeee;
+}
+
+.backgroundImg {
+    background-image: url("../images/background.jpg");
+}
+
+.wrapper {
+    background-color: #eeeeee;
+    width: 80%;
+    margin: 0 auto;
+}
+
+.navbar {
+    background-color: #eeeeee;
+}
+
+.navbar a{
+    color: #5a5bbf;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.navbar a:hover {
+    background: #efbf2b;
+    border-radius: 5px;
+}
+
+.active {
+    background: #efbf2b;
+    border-radius: 5px;
+}
+
+.custom-toggler .navbar-toggler-icon {
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='#5a5bbf' stroke-width='5' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
+}
+
+.head {
+    color: white;
+    background-image: url("../images/cover.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 65vh;
+}
+
+.featHounds {
+    width: 65%;
+    margin: 0 auto;
+}
+
+.availableHounds {
+    width: 40%;
+    height: 10%;
+    margin: 0 auto;
+}
+
+.imgCarosel {
+    width: 100%;
+    margin: 0 auto;
+}
+
+.carousel-item {
+    height: 50vh;
+    background-color: transparent;
+    overflow: hidden;
+}
+
+.fontIcon {
+    height: 50px;
+    width: 50px;
+    background-color: #5a5bbf;
+    border-radius: 10px;
+}
+
+.alignImg {
+    margin: 0 auto;
+}
+
+#quote {
+    background: #7172be;
+    color: #ffffff;
+    border-radius: 20px;
+    width: 70%;
+    margin-left: 15%;
+}
+
+footer {
+    padding: 2%;
+    background:#7172be;
+    color: #ffffff;
+}
+
+footer a{
+    color: #efbf2b;
+}
+
+footer a:hover{
+    color: #00beff;
+}
+
+.blockquote-footer {
+    color: #ffffff;
+}
+
+.adopt {
+    background-image: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ),url("../images/bassetCover.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    height: 65vh;
+    color: white;
+}
+
+.card {
+    background: #e0e0e0;
+}
+
+.fosterRelinquish {
+    background-color: #e0e0e0;
+    padding: 20px;
+    border-radius: 10px;
+    height: 100%;
+}
+
+.adoptDescription {
+    background-color: #7172be;
+    padding: 3%;
+    color: #eeeeee;
+    border-radius: 10px;
+    width: 100%;
+    text-align: center;
+}

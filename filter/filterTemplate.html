@@ -246,6 +246,11 @@
             <div class="row grid" id="projects">
 
             </div>
+            <div class="no-results alert alert-danger text-center" role="alert">
+                <h4 class="alert-heading">No Results...</h4>
+                <p>Please edit filter selections or</p>
+                <button class="button btn btn-danger btn-lg" onClick="window.location.reload();">Reset Filters</button>
+            </div>
         </div>
 
         <br>
@@ -292,6 +297,18 @@
     var $filterUI = $('.filters .button');
 
     updateFilterCounts();
+    checkResults();
+
+    function checkResults(){
+        var visibleItemsCount = $grid.data('isotope').filteredItems.length;
+        console.log(filters);
+        if( visibleItemsCount > 0 ){
+            $('.no-results').hide();
+        }
+        else{
+            $('.no-results').show();
+        }
+    }
 
     // store filter for each group
     var filters = {};
@@ -308,6 +325,7 @@
         // set filter for Isotope
         $grid.isotope({ filter: filterValue });
         updateFilterCounts();
+        checkResults();
     });
 
     // change is-checked class on buttons

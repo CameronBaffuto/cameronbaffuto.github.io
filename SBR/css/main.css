@@ -1,15 +1,21 @@
-body {
-    background-color: #eeeeee;
+html {
+    scroll-behavior: smooth;
+}
+
+.pagebg {
+    background-color: rgba(120, 121, 193, 0.5);
+}
+
+.formbody {
+    overflow: hidden;
 }
 
 .backgroundImg {
     background-image: url("../images/background.jpg");
 }
 
-.wrapper {
+.bg-gray {
     background-color: #eeeeee;
-    width: 80%;
-    margin: 0 auto;
 }
 
 .navbar {
@@ -113,12 +119,8 @@ footer a:hover{
     color: white;
 }
 
-.card {
-    background: #e0e0e0;
-}
-
 .fosterRelinquish {
-    background-color: #e0e0e0;
+    background-color: rgba(120, 121, 193, 0.35);
     padding: 20px;
     border-radius: 10px;
     height: 100%;

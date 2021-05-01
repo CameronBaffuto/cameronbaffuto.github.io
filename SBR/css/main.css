@@ -6,16 +6,13 @@ html {
     background-color: rgba(120, 121, 193, 0.5);
 }
 
-.formbody {
-    overflow: hidden;
-}
-
 .backgroundImg {
     background-image: url("../images/background.jpg");
 }
 
 .bg-gray {
     background-color: #eeeeee;
+    border-radius: 20px;
 }
 
 .navbar {

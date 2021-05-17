@@ -101,8 +101,6 @@
         @media (min-width: 414px) {
             #sidebar-wrapper {
                 margin-left: 0;
-                overflow-y: auto;
-                overflow-x: hidden;
             }
 
             #sidebar-wrapper .ui-group .button-group{
@@ -127,8 +125,6 @@
         @media (max-width: 390px) {
             #sidebar-wrapper {
                 margin-left: 0;
-                overflow-y: auto;
-                overflow-x: hidden;
             }
 
             #sidebar-wrapper .ui-group .button-group{
@@ -155,7 +151,7 @@
 
 </head>
 <body>
-<div class="d-flex" id="wrapper">
+<div class="d-flex test" id="wrapper">
 
     <!-- Sidebar -->
     <div class="filters side pb-5" id="sidebar-wrapper">
@@ -389,8 +385,21 @@
 
 <script>
 
-    var totalCount = $('.grid-item').length;
-    document.getElementById("total-count").innerHTML = totalCount;
+    jQuery(document).ready(function($) {
+        var alterClass = function() {
+            var ww = document.body.clientWidth;
+            if (ww < 600) {
+                $('.test').addClass('toggled');
+            } else if (ww >= 601) {
+                $('.test').removeClass('toggled');
+            };
+        };
+        $(window).resize(function(){
+            alterClass();
+        });
+        //Fire it when the page first loads:
+        alterClass();
+    });
 
 </script>
 

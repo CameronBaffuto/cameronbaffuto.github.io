@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="apple-touch-icon" sizes="180x180" href="../resources/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="../resources/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="../resources/favicon-16x16.png">
+    <link rel="manifest" href="../resources/site.webmanifest">
+    <link rel="mask-icon" href="../resources/safari-pinned-tab.svg" color="#5bbad5">
+    <meta name="msapplication-TileColor" content="#00aba9">
+    <meta name="theme-color" content="#ffffff">
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/turn-js@0.5.4/index.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/turn-js@0.5.4/lib/turn_client.min.js"></script>
+
+    <title>Eyes</title>
+
+    <style>
+        body{
+            overflow:hidden;
+        }
+
+        #flipbook{
+            width:400px;
+            height:300px;
+        }
+
+        #flipbook .page{
+            width:400px;
+            height:300px;
+            background-color:white;
+            line-height:300px;
+            font-size:20px;
+            text-align:center;
+        }
+
+        #flipbook .page-wrapper{
+            -webkit-perspective:2000px;
+            -moz-perspective:2000px;
+            -ms-perspective:2000px;
+            -o-perspective:2000px;
+            perspective:2000px;
+        }
+
+        #flipbook .hard{
+            background:#ccc !important;
+            color:#333;
+            -webkit-box-shadow:inset 0 0 5px #666;
+            -moz-box-shadow:inset 0 0 5px #666;
+            -o-box-shadow:inset 0 0 5px #666;
+            -ms-box-shadow:inset 0 0 5px #666;
+            box-shadow:inset 0 0 5px #666;
+            font-weight:bold;
+        }
+
+        #flipbook .odd{
+            background:-webkit-gradient(linear, right top, left top, color-stop(0.95, #FFF), color-stop(1, #DADADA));
+            background-image:-webkit-linear-gradient(right, #FFF 95%, #C4C4C4 100%);
+            background-image:-moz-linear-gradient(right, #FFF 95%, #C4C4C4 100%);
+            background-image:-ms-linear-gradient(right, #FFF 95%, #C4C4C4 100%);
+            background-image:-o-linear-gradient(right, #FFF 95%, #C4C4C4 100%);
+            background-image:linear-gradient(right, #FFF 95%, #C4C4C4 100%);
+            -webkit-box-shadow:inset 0 0 5px #666;
+            -moz-box-shadow:inset 0 0 5px #666;
+            -o-box-shadow:inset 0 0 5px #666;
+            -ms-box-shadow:inset 0 0 5px #666;
+            box-shadow:inset 0 0 5px #666;
+
+        }
+
+        #flipbook .even{
+            background:-webkit-gradient(linear, left top, right top, color-stop(0.95, #fff), color-stop(1, #dadada));
+            background-image:-webkit-linear-gradient(left, #fff 95%, #dadada 100%);
+            background-image:-moz-linear-gradient(left, #fff 95%, #dadada 100%);
+            background-image:-ms-linear-gradient(left, #fff 95%, #dadada 100%);
+            background-image:-o-linear-gradient(left, #fff 95%, #dadada 100%);
+            background-image:linear-gradient(left, #fff 95%, #dadada 100%);
+            -webkit-box-shadow:inset 0 0 5px #666;
+            -moz-box-shadow:inset 0 0 5px #666;
+            -o-box-shadow:inset 0 0 5px #666;
+            -ms-box-shadow:inset 0 0 5px #666;
+            box-shadow:inset 0 0 5px #666;
+        }
+    </style>
+
+</head>
+<body>
+<nav class="navbar bg-dark navbar-dark navbar-expand-md">
+    <a class="navbar-brand" href="../index.html"><img src="../resources/logo.png" width="50em"></a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar1">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+</nav>
+<div class="container mt-3">
+    <h1 class="text-center pt-3">Flipbook Test</h1>
+    <br>
+
+    <div id="flipbook">
+        <div class="hard"> Turn.js </div>
+        <div class="hard"></div>
+        <div> Page 1 </div>
+        <div> Page 2 </div>
+        <div> Page 3 </div>
+        <div> Page 4 </div>
+        <div class="hard"></div>
+        <div class="hard"></div>
+    </div>
+
+</div>
+
+<script>
+
+    $("#flipbook").turn({
+        width: 400,
+        height: 300,
+        autoCenter: true
+    });
+
+</script>
+
+</body>
+</html>

@@ -16,14 +16,19 @@
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
 
     <style>
+        body {
+            background: #333333;
+            overflow: hidden;
+        }
+
         #wrapper {
-            overflow-x: hidden;
+            height: 100vh;
+            width: 100vw;
         }
 
         #sidebar-wrapper {
-            height: 100vh;
-            overflow-y: auto;
-            overflow-x: hidden;
+
+            overflow-y: scroll;
             margin-left: -15rem;
             -webkit-transition: margin .25s ease-out;
             -moz-transition: margin .25s ease-out;
@@ -42,6 +47,7 @@
 
         #page-content-wrapper {
             min-width: 100vw;
+            overflow-y: scroll;
         }
 
         #wrapper.toggled #sidebar-wrapper {
@@ -60,6 +66,21 @@
         .is-checked {
             background-color:#868e96;
             color: white;
+        }
+
+        .side {
+            background: #1d1d1d;
+            color: #989898;
+        }
+
+        .jumbhead {
+            background: #333333;
+            color: #7eb762;
+        }
+
+        .card-body {
+            background: #1d1d1d;
+            color: #7eb762;
         }
 
         @media (min-width: 768px) {
@@ -130,14 +151,14 @@
         }
     </style>
 
-    <title>Bionical Asset Manager</title>
+    <title>Filter</title>
 
 </head>
 <body>
 <div class="d-flex" id="wrapper">
 
     <!-- Sidebar -->
-    <div class="filters bg-light border-right pb-5" id="sidebar-wrapper">
+    <div class="filters side pb-5" id="sidebar-wrapper">
         <div class="sidebar-heading">Filter Options</div>
         <hr>
         <!-- <p class="ml-4 mt-3">Total Programs <span class="badge badge-primary" id="total-count"></span></p> -->
@@ -230,15 +251,15 @@
     <!-- Page Content -->
     <div id="page-content-wrapper">
 
-        <nav class="navbar navbar-expand-lg navbar-light bg-light border-bottom">
+        <nav class="navbar navbar-expand-lg side">
             <button class="btn btn-secondary" id="menu-toggle">Filter <i class="fas fa-filter"></i></button>
         </nav>
 
         <div class="container-fluid">
 
-            <div class="jumbotron jumbotron-fluid">
-                <img class="mx-auto d-block" src=../images/bionical-logo.png height="50vh">
-                <h1 class="display-4 text-center">Bionical US</h1>
+            <div class="jumbotron jumbotron-fluid jumbhead">
+                <img class="mx-auto d-block" src="../resources/logo.png" height="50vh">
+                <h1 class="display-4 text-center">Test Filter</h1>
                 <p class="lead text-center">Search Through Past Programs</p>
             </div>
 
@@ -277,20 +298,22 @@
 <script src='http://imagesloaded.desandro.com/imagesloaded.pkgd.js'></script>
 
 <script>
+
     $("#menu-toggle").click(function(e) {
         e.preventDefault();
         $("#wrapper").toggleClass("toggled");
     });
-</script>
 
 
-<script>
+    // $(window).load(function(){$('#grid').isotope('reLayout');});
 
     var $grid = $('.grid').isotope({
         itemSelector: '.grid-item',
         percentPosition: true,
         layoutMode: 'fitRows'
     });
+
+
 
     $(window).on('load', function(){ $grid.isotope('layout') });
 

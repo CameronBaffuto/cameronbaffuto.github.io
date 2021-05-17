@@ -1,12 +1,12 @@
  function cardTemplate(prog) {
         return `
             <div class="grid-item col-lg-4 col-md-6 my-2 ${prog.tags}">
-                <div class="card grid-item-content mb-5 h-100">
+                <div class="card h-100 grid-item-content mb-5">
                     <img src="${prog.topImg}" class="card-img-top" data-toggle="modal" data-target="#${prog.modalid}" alt="Card image cap">
                  <div class="card-body">
                     <h5 class="card-title">${prog.cardTitle}</h5>
                     <p class="card-text">${prog.cardText}</p>
-                    <div class="d-flex justify-content-between align-items-center">
+                    <div class="justify-content-between align-items-center">
                        <div class="btn-group">
                          <button type="button" class="btn btn-sm btn-outline-secondary" data-toggle="modal" data-target="#${prog.modalid}">Preview</button>
                          <div class="modal fade" id="${prog.modalid}" tabindex="-1" role="dialog" aria-labelledby="tremfyaCardTitle" aria-hidden="true">

@@ -1,7 +1,7 @@
 const projectData = [
     {
         tags: "medselect unbranded postcard hcpyes pdfno dseno vaeno emailcustomno",
-        topImg: "images/90147bmsAfibPostcardMedselect/afib-thumb.PNG",
+        topImg: "700x500.png",
         cardTitle: "90147 Pfizer BMS AFib Postcard",
         cardText: "Medselect &#9679; Unbranded &#9679; Postcard &#9679; HCP toggle",
         modalid: "afibCard",
@@ -9,11 +9,11 @@ const projectData = [
         slideTwo: "images/90147bmsAfibPostcardMedselect/afibTwo.PNG",
         slideThree: "images/90147bmsAfibPostcardMedselect/afibThree.PNG",
         slideFour: "images/90147bmsAfibPostcardMedselect/afibFour.PNG",
-        linkButton: "https://bionicalllc.sharefile.com/d-sa3d7d94e3ecd4f429597a89431fa0a24"
+        linkButton: "#"
     },
     {
         tags: "patientprofiler branded pdfno hcpno dseno vaeyes emailcustomyes",
-        topImg: "images/90138cyclosetPatientProfiler/cycloset-thumb.PNG",
+        topImg: "700x500.png",
         cardTitle: "90138 Bausch-Salix Cycloset Patient Profiler",
         cardText: "Patient profiler &#9679; Branded &#9679; Approved Email",
         modalid: "cyclosetCard",
@@ -21,11 +21,11 @@ const projectData = [
         slideTwo: "images/90138cyclosetPatientProfiler/cyclosetTwo.PNG",
         slideThree: "images/90138cyclosetPatientProfiler/cyclosetThree.PNG",
         slideFour: "images/90138cyclosetPatientProfiler/cyclosetFour.PNG",
-        linkButton: "https://bionicalllc.sharefile.com/d-s5c71f9e2213b4dbc991a79013a51fe32"
+        linkButton: "#"
     },
     {
         tags: "kolselect branded pdfno hcpno dseno vaeyes",
-        topImg: "images/90116tremfyaDermKolselect/tremfya-thumb.PNG",
+        topImg: "700x500.png",
         cardTitle: "90116 Janssen Tremfya Derm KOL Select",
         cardText: "Kolselect &#9679; Branded &#9679; Approved Email",
         modalid: "tremfyaCard",
@@ -33,11 +33,11 @@ const projectData = [
         slideTwo: "images/90116tremfyaDermKolselect/tremfyaTwo.PNG",
         slideThree: "images/90116tremfyaDermKolselect/tremfya-thumb.PNG",
         slideFour: "images/90116tremfyaDermKolselect/tremfyaTwo.PNG",
-        linkButton: "https://bionicalllc.sharefile.com/d-s439cc4ab1f4f4ce5a2d4cfd0069199e4"
+        linkButton: "#"
     },
     {
         tags: "medselect branded brochure pdfyes hcpyes dseno vaeno emailcustomno",
-        topImg: "images/90156janssenSpravatoMedselect/spravato-thumb.PNG",
+        topImg: "700x500.png",
         cardTitle: "90156 Janssen Spravato MED Select",
         cardText: "MED Select &#9679; Branded &#9679; Brochure &#9679; PDF Delivery &#9679; HCP toggle",
         modalid: "spravatoCard",
@@ -45,11 +45,11 @@ const projectData = [
         slideTwo: "images/90156janssenSpravatoMedselect/spravatoTwo.PNG",
         slideThree: "images/90156janssenSpravatoMedselect/spravatoThree.PNG",
         slideFour: "images/90156janssenSpravatoMedselect/spravatoFour.PNG",
-        linkButton: "https://bionicalllc.sharefile.com/d-se743463237fd45a59d89665fb7a67483"
+        linkButton: "#"
     },
     {
         tags: "medselect branded tearpad pdfno hcpno dseno vaeno emailcustomno",
-        topImg: "images/90097endoNascobalMedselect/nascobal-thumb.PNG",
+        topImg: "700x500.png",
         cardTitle: "90097 Endo Nascobal MED Select",
         cardText: "MED Select &#9679; Branded &#9679; Tearpad",
         modalid: "nascobalCard",
@@ -57,11 +57,11 @@ const projectData = [
         slideTwo: "images/90097endoNascobalMedselect/nascobalTwo.PNG",
         slideThree: "images/90097endoNascobalMedselect/nascobalThree.PNG",
         slideFour: "images/90097endoNascobalMedselect/nascobalFour.PNG",
-        linkButton: "https://bionicalllc.sharefile.com/d-sa4824fdc3c894b549bb45a2363cb6c0c"
+        linkButton: "#"
     },
     {
         tags: "medselect unbranded tearpad wallchart pdfno hcpyes dseno vaeno emailcustomno",
-        topImg: "images/90146merckKeytrudaMedSelect/keytruda-thumb.PNG",
+        topImg: "700x500.png",
         cardTitle: "90146 Merck Keytruda MED Select",
         cardText: "MED Select &#9679; Unbranded &#9679; Wallchart &#9679; Tearpad &#9679; HCP toggle",
         modalid: "keytrudaCard",
@@ -69,6 +69,6 @@ const projectData = [
         slideTwo: "images/90146merckKeytrudaMedSelect/keytrudaTwo.PNG",
         slideThree: "images/90146merckKeytrudaMedSelect/keytrudaThree.PNG",
         slideFour: "images/90146merckKeytrudaMedSelect/keytrudaFour.PNG",
-        linkButton: "https://bionicalllc.sharefile.com/d-sda1b24e68b79484a91fd1bc8422e8c59"
+        linkButton: "#"
     }
 ];

@@ -276,14 +276,6 @@
 
         <br>
         <br>
-        <!-- <footer class="text-light bg-dark">
-            <div class="container">
-              <p class="float-right">
-                <a href="#" class="btn btn-sm btn-primary">Back to top</a>
-              </p>
-              <p><img src=../images/bionical-logo.png height="30vh"> Bionical Solutions US</p>
-            </div>
-          </footer> -->
     </div>
 
 </div>
@@ -305,15 +297,15 @@
     });
 
 
-    // $(window).load(function(){$('#grid').isotope('reLayout');});
-
     var $grid = $('.grid').isotope({
         itemSelector: '.grid-item',
         percentPosition: true,
         layoutMode: 'fitRows'
     });
 
-
+    $grid.imagesLoaded().progress( function() {
+        $grid.isotope('layout');
+    });
 
     $(window).on('load', function(){ $grid.isotope('layout') });
 

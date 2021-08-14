@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head><meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge"><meta charset="UTF-8">
+
+  <title>Chosen</title>
+
+  <link rel="stylesheet" href="https://unpkg.com/papercss@1.8.2/dist/paper.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+  <script src="https://cdn.rawgit.com/harvesthq/chosen/gh-pages/chosen.jquery.min.js"></script>
+  <link href="https://cdn.rawgit.com/harvesthq/chosen/gh-pages/chosen.min.css" rel="stylesheet"/>
+</head>
+<body>
+
+<nav class="border fixed">
+  <div class="nav-brand">
+    <h4><a href="../index.html">Home</a></h4>
+  </div>
+</nav>
+
+<div class="paper container">
+<h1>Drop Down Multiselect</h1>
+<div class="form-group">
+  <label for="paperSelects1">Select Language</label>
+    <select data-placeholder="Choose Options" multiple class="chosen-select" name="test" id="paperSelects1">
+      <option value=""></option>
+      <option>English</option>
+      <option>Spanish</option>
+      <option>Russian</option>
+      <option>Mandarin</option>
+      <option>Hindi</option>
+      <option>Korean</option>
+    </select>
+  <br>
+  <br>
+  <label for="paperInputs1">Delivery Email</label>
+  <input type="text" placeholder="Nice input" id="paperInputs1">
+
+</div>
+
+</div>
+
+<script>
+  $(".chosen-select").chosen({
+    no_results_text: "Oops, nothing found!"
+  })
+</script>
+</body>
+</html>

@@ -1,0 +1,426 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="../../favico/apple-touch-icon.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="../../favico/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="../../favico/favicon-16x16.png"
+    />
+    <link rel="manifest" href="../../favico/site.webmanifest" />
+
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.7.0/css/all.css"
+      integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="../../css/main.css" />
+    <script
+      src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+      integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+      integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+      integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+      crossorigin="anonymous"
+    ></script>
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/uikit@3.9.4/dist/css/uikit.min.css" />
+    <script src="https://cdn.jsdelivr.net/npm/uikit@3.9.4/dist/js/uikit.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/uikit@3.9.4/dist/js/uikit-icons.min.js"></script>
+    <script src="kingData.js"></script>
+    <script src="queenData.js"></script>
+
+    <style>
+        
+        .overlay {
+            background-color: rgba(0, 0, 0, 0.733);
+            border-radius: 2%;
+            padding: 3%;
+            color:white;
+        }
+
+        .debug {
+          border-color: red;
+          border-style: solid;
+        }
+    </style>
+
+    <title>Suncoast Basset Rescue - Events</title>
+  </head>
+  <body class="pagebg">
+    <nav class="navbar navbar-expand-lg">
+        <a class="navbar-brand" href="../../index.html"><img src="../../images/SBRLogo.png" width="115vh" alt="..."></a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarToggler" aria-controls="navbarToggler" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"><i class="fas fa-bars" style="color:#5a5bbf; font-size:2rem;"></i></span>
+        </button>
+
+      <div class="collapse navbar-collapse" id="navbarToggler">
+        <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+          <li class="nav-item dropdown">
+            <a
+              class="nav-link dropdown-toggle"
+              href="#"
+              id="adoptDropdown"
+              role="button"
+              data-toggle="dropdown"
+              aria-haspopup="true"
+              aria-expanded="false"
+            >
+              Adoptables
+            </a>
+            <div class="dropdown-menu" aria-labelledby="adoptDropdown">
+              <a class="dropdown-item" href="../adopt/adoption/adopt.html"
+                >Available Hounds</a
+              >
+              <a class="dropdown-item" href="../adopt/virtual/virtualAdopt.html"
+                >Virtual Adoption Info</a
+              >
+              <a
+                class="dropdown-item"
+                href="../adopt/adoptionProcedure/adoptionProcedure.html"
+                >Adoption Procedures</a
+              >
+              <a
+                class="dropdown-item"
+                href="../adopt/adoptionApplication/adoptionApplication.html"
+                >Adoption Application</a
+              >
+            </div>
+          </li>
+          <li class="nav-item dropdown">
+            <a
+              class="nav-link dropdown-toggle"
+              href="#"
+              id="volunteerDropdown"
+              role="button"
+              data-toggle="dropdown"
+              aria-haspopup="true"
+              aria-expanded="false"
+            >
+              Volunteer
+            </a>
+            <div class="dropdown-menu" aria-labelledby="volunteerDropdown">
+              <a
+                class="dropdown-item"
+                href="../volunteer/volunteerDescription.html"
+                >Volunteer Descriptions</a
+              >
+              <a
+                class="dropdown-item"
+                href="../volunteer/volunteerApplication.html"
+                >Volunteer Application</a
+              >
+              <a
+                class="dropdown-item"
+                href="../volunteer/volunteerFosterDocuments.html"
+                >Volunteer/Foster Documents</a
+              >
+              <div class="dropdown-divider"></div>
+              <a class="dropdown-item" href="../volunteer/fosteringFAQ.html"
+                >Fostering a Basset FAQ's</a
+              >
+              <a class="dropdown-item" href="../volunteer/fosterReport.html"
+                >Foster Report</a
+              >
+              <a
+                class="dropdown-item"
+                href="../volunteer/fosterApplication.html"
+                >Foster Application</a
+              >
+            </div>
+          </li>
+          <li class="nav-item dropdown">
+            <a
+              class="nav-link dropdown-toggle"
+              href="#"
+              id="helpDropdown"
+              role="button"
+              data-toggle="dropdown"
+              aria-haspopup="true"
+              aria-expanded="false"
+            >
+              Help SBR
+            </a>
+            <div class="dropdown-menu" aria-labelledby="helpDropdown">
+              <a class="dropdown-item" href="../help/donate.html"
+                >Donate to Suncoast</a
+              >
+              <a class="dropdown-item" href="../help/support.html"
+                >Support us</a
+              >
+            </div>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="../about/about.html">About</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="./events.html">Events</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="../happytails/happytails.html"
+              >Happy Tails!</a
+            >
+          </li>
+          <li class="nav-item dropdown">
+            <a
+              class="nav-link dropdown-toggle"
+              href="#"
+              id="resourcesDropdown"
+              role="button"
+              data-toggle="dropdown"
+              aria-haspopup="true"
+              aria-expanded="false"
+            >
+              Resources
+            </a>
+            <div class="dropdown-menu" aria-labelledby="resourcesDropdown">
+              <a class="dropdown-item" href="../resources/allAboutBassets.html"
+                >All About Bassets</a
+              >
+              <a class="dropdown-item" href="../resources/relinquish.html"
+                >Relinquish a Basset</a
+              >
+              <a class="dropdown-item" href="../resources/lostOrStray.html"
+                >Lost or Stray Basset</a
+              >
+              <a class="dropdown-item" href="../resources/readingPleasure.html"
+                >For Your Reading Pleasure</a
+              >
+            </div>
+          </li>
+        </ul>
+        <a
+          class="mr-5"
+          style="border-bottom: 2px solid #efbf2b"
+          href="../../mailList.html"
+          target="popup"
+          onclick="window.open('../../mailList.html','popup','width=600,height=600,scrollbars=no,resizable=no'); return false;"
+          >Join our Mailing list <i class="far fa-envelope"></i
+        ></a>
+        <form
+          action="https://www.paypal.com/donate"
+          method="post"
+          target="_top"
+        >
+          <input type="hidden" name="hosted_button_id" value="43B67W747YR66" />
+          <input type="hidden" name="currency_code" value="USD" />
+          <button
+            class="btn btn-danger btn-lg"
+            type="submit"
+            formtarget="_blank"
+          >
+            Donate
+          </button>
+        </form>
+      </div>
+    </nav>
+
+    <div class="container shadow bg-gray my-5 py-5">
+      <h1 class="text-center mb-5">
+        <i class="fas fa-paw"></i> 2022 SBR Waddle King Nominees <i class="fas fa-paw"></i>
+      </h1>
+
+        <div class="text-center m-auto">
+        <h3 class="lead font-weight-bold">King</h3>
+        <p>Click below to vote for your choice for Waddle King</p>
+        <p>Please vote for one hound at a time per submission</p>
+        
+        <p>
+            <a class="btn btn-warning" data-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false" aria-controls="collapseExample">
+              Vote
+            </a>
+          </p>
+          <div class="collapse" id="collapseExample">
+            <div class="card card-body">
+                <iframe class="shadow rounded" src="https://script.google.com/macros/s/AKfycbwW_iSbOit_Asnl4IwicqCj5mgQONt-cpMcUs2ZQNf-rybM_8rwSVz-hAvdrxwtDpvK/exec" width="100%" height="650" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+            </div>
+          </div>
+    
+    </div>
+    <br />
+    
+    <br />
+
+<a class="btn btn-primary m-3 float-right" href="./queens.html" role="button"><i class="fas fa-chess-queen"></i> Switch to Queens <i class="fas fa-chess-queen"></i></a>
+
+<div class="uk-h1 uk-margin-auto uk-heading-divider"><i class="fas fa-chess-king"></i> King Nominees <i class="fas fa-chess-king"></i></div>
+
+   <br>
+
+<div id="kings">
+
+</div>
+
+<a class="btn btn-primary m-3" href="./queens.html" role="button"><i class="fas fa-chess-queen"></i> Switch to Queens <i class="fas fa-chess-queen"></i></a>
+
+    <br />
+    <hr class="my-4" />
+    <br />
+
+      <div class="text-center">
+          <p>Want to nominate your hound? Click below!</p>
+        <a class="btn btn-primary m-3" href="./nominate.html" role="button">Nominate</a>
+      </div>
+    </div>
+
+    <br />
+
+    <footer>
+      <div class="container">
+        <p class="float-right">
+          <a href="#" class="btn btn-warning btn-lg"
+            ><i class="fas fa-arrow-up"></i
+          ></a>
+        </p>
+        <h5>Foster Homes Desperately Needed!</h5>
+        <p>
+          Please <a href="../volunteer/fosteringFAQ.html">Click Here</a> to
+          learn more about Fostering
+        </p>
+        <h5>Owner Relinquishes</h5>
+        <p>
+          Think you might have to reinquish your Hound? Go
+          <a href="../resources/relinquish.html">Here</a> first!
+        </p>
+        <h3 class="text-right font-weight-bold">
+          <a href="mailto:info@suncoastbassetrescue.org"
+            >Contact Us <i class="fas fa-arrow-right"></i
+          ></a>
+        </h3>
+        <h4 class="text-right font-weight-bold">
+          <a
+            href="../../mailList.html"
+            target="popup"
+            onclick="window.open('../../mailList.html','popup','width=600,height=600,scrollbars=no,resizable=no'); return false;"
+            >Join our Mailing list <i class="far fa-envelope"></i
+          ></a>
+        </h4>
+        <p class="text-center">Copyright © 2021 Suncoast Basset Rescue, Inc.</p>
+        <p class="text-center">4142 Mariner Blvd #305</p>
+        <p class="text-center">Spring Hill, FL 34609</p>
+        <p class="text-center">(352) 371-8082</p>
+      </div>
+    </footer>
+
+
+    <script>
+
+    function waddleCardTemplate(king) {
+        return `
+        <article class="uk-comment">
+  <header class="uk-comment-header">
+      <div class="uk-grid-medium uk-flex-middle" uk-grid>
+          <div class="uk-width-1-1 uk-margin-top">
+              <h4 class="uk-comment-title uk-margin-remove">${king.hound}</h4>
+              <ul class="uk-comment-meta uk-subnav uk-subnav-divider uk-margin-remove-top">
+                  <li class="uk-text-muted">${king.name}</li>
+                  <li class="uk-text-success">${king.votes}</li>
+              </ul>
+          </div>
+      </div>
+  </header>
+  
+<br>        
+<div class="uk-container" uk-slider="autoplay: true">
+
+<div class="uk-position-relative uk-visible-toggle uk-light">
+
+  <div class="uk-slider-items uk-child-width-1-2 uk-child-width-1-3@s uk-child-width-1-5@m" uk-lightbox>
+    <div>
+      <a href="${king.imgOne}" data-caption="1">
+        <img src="${king.imgOne}" alt="">
+        <div class="uk-position-center uk-panel">
+          
+        </div>
+      </a>
+    </div>
+    <div>
+      <a href="${king.imgTwo}" data-caption="2">
+        <img src="${king.imgTwo}" alt="">
+        <div class="uk-position-center uk-panel">
+         
+        </div>
+      </a>
+    </div>
+    <div>
+      <a href="${king.imgThree}" data-caption="3">
+        <img src="${king.imgThree}" alt="">
+        <div class="uk-position-center uk-panel">
+          
+        </div>
+      </a>
+    </div>
+    <div>
+      <a href="${king.imgFour}" data-caption="4">
+        <img src="${king.imgFour}" alt="">
+        <div class="uk-position-center uk-panel">
+          
+        </div>
+      </a>
+    </div>
+    <div>
+      <a href="${king.imgFive}" data-caption="5">
+        <img src="${king.imgFive}" alt="">
+        <div class="uk-position-center uk-panel">
+          
+        </div>
+      </a>
+    </div>
+
+  </div>
+
+  <a class="uk-position-center-left uk-position-small uk-hidden-hover" href="#" uk-slidenav-previous uk-slider-item="previous"></a>
+  <a class="uk-position-center-right uk-position-small uk-hidden-hover" href="#" uk-slidenav-next uk-slider-item="next"></a>
+
+</div>
+</div>
+<div class="uk-text-center uk-text-muted">
+  Click on a picture to view fullsize
+</div>
+<br>
+<div class="uk-comment-body">
+      <p>${king.message}</p>
+  </div>
+</article>
+<hr class="uk-divider-icon">
+        `
+    }
+
+    document.getElementById("kings").innerHTML = `
+      ${kingData.map(waddleCardTemplate).join('')}
+  `
+
+    </script>
+  </body>
+</html>

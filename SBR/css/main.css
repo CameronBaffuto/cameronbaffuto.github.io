@@ -131,3 +131,41 @@ footer a:hover{
     width: 100%;
     text-align: center;
 }
+
+#auctionJumbo {
+    color: white;
+    background-image: linear-gradient( rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4) ),url("../images/SillyMoosePhotography-11.jpg");
+    background-position: center top;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: auto;
+}
+
+.beer {
+    background-image: url("../../images/beer.jpeg");
+    background-size: cover;
+}
+
+.overlay {
+    background-color: rgba(0, 0, 0, 0.733);
+    border-radius: 2%;
+    padding: 3%;
+    color:white;
+}
+
+.red {
+    color: red;
+}
+
+.hearts {
+    background-image: url("../../images/pinkhearts.jpeg");
+    background-size: cover; 
+}
+
+.overlayWhite {
+    background-color: rgba(255, 255, 255, 0.904);
+    border-radius: 20px;
+    padding: 2%;
+    margin: 2%;
+    color:rgb(168, 18, 111);
+}

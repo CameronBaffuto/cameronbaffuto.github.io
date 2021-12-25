@@ -411,6 +411,29 @@
   <br>
   <a id="js-scroll-trigger" class="btn btn-warning float-right mb-5 mr-5" href="#voteScroll" uk-scroll>Vote</a>
 </article>
+<div>
+  <a class="btn btn-primary" data-toggle="collapse" href="#${queen.hound}" role="button" aria-expanded="false" aria-controls="collapseExample">
+    View Votes and Comments
+  </a>
+  <div class="collapse" id="${queen.hound}">
+  <div class="card card-body">
+    <button class="btn btn-default ml-auto" data-toggle="collapse" href="#${queen.hound}">
+      <span style="font-size: 2em; color: Tomato;"><i class="fas fa-times-circle"></i></span>
+    </button>
+    ${queen.comment.map
+                (com => `
+                <div class="card w-100">
+                  <div class="card-body">
+                  <h4 class="card-title bold">${com.name}</h4>
+                  <p class="card-text">${com.message}</p>
+                  <h3 class="text-success bold float-right">$${com.amount}</h3>
+                  </div>
+                </div>
+         
+                `).join("")
+            }
+  </div>
+</div>
 <br>
 <hr>
         `

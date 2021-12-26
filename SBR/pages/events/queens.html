@@ -60,6 +60,7 @@
     <script src="https://cdn.jsdelivr.net/npm/uikit@3.9.4/dist/js/uikit-icons.min.js"></script>
     <script src="kingData.js"></script>
     <script src="queenData.js"></script>
+    <script src="voteForm.js"></script>
 
     <style>
         
@@ -261,8 +262,8 @@
             </a>
           </p>
           <div class="collapse" id="voteCollapse">
-            <div class="card card-body">
-                <iframe class="shadow rounded" src="https://script.google.com/macros/s/AKfycbwgE37yP_aHWvpMHeLlfi0XEdv8AYZcPVvkYAELX3NQoZCUPfUGJ8cP-zpGDsvVSRavdA/exec" width="100%" height="800" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+            <div class="card card-body" id="voteiframe">
+                
             </div>
           </div>
     
@@ -445,6 +446,16 @@
   UIkit.util.on('#js-scroll-trigger', 'scrolled', function () {
         document.getElementById("voteForm").click();
     });
+
+    function voteTemplate(vote) {
+        return `
+        <iframe class="shadow rounded" src="${vote.form}" width="100%" height="800" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+        `
+    }
+
+    document.getElementById("voteiframe").innerHTML = `
+      ${voteForm.map(voteTemplate)}
+  `
 
     </script>
   </body>

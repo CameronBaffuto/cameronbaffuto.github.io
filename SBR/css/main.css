@@ -142,7 +142,7 @@ footer a:hover{
 }
 
 .beer {
-    background-image: url("../../images/beer.jpeg");
+    background-image: url("../images/beer.jpeg");
     background-size: cover;
 }
 
@@ -158,7 +158,7 @@ footer a:hover{
 }
 
 .hearts {
-    background-image: url("../../images/pinkhearts.jpeg");
+    background-image: url("../images/pinkhearts.jpeg");
     background-size: cover; 
 }
 

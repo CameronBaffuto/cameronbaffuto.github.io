@@ -255,8 +255,30 @@
         <div class="text-center m-auto" id="voteScroll">
         <h3 class="lead font-weight-bold">King</h3>
         <p>Click below to vote for your choice for Waddle King or Queen</p>
+
+        <button type="button" class="btn btn-warning" data-toggle="modal" data-target="#exampleModal">
+          Vote
+        </button>
+
+        <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+          <div class="modal-dialog" role="document">
+            <div class="modal-content">
+              <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                  <span aria-hidden="true">&times;</span>
+                </button>
+              </div>
+              <div class="modal-body" id="voteiframe">
+                
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+              </div>
+            </div>
+          </div>
+        </div>
         
-        <p>
+          <!-- <p>
             <a class="btn btn-warning" data-toggle="collapse" href="#voteCollapse" role="button" aria-expanded="false" aria-controls="collapseExample" id="voteForm">
               Vote
             </a>
@@ -265,7 +287,7 @@
             <div id="voteiframe" class="card card-body">
                 
             </div>
-          </div>
+          </div> -->
     
     </div>
     <br />
@@ -409,7 +431,8 @@
       <p>${king.message}</p>
   </div>
   <br>
-  <a id="js-scroll-trigger" class="btn btn-warning float-right mb-5 mr-5" href="#voteScroll" uk-scroll>Vote</a>
+  <button type="button" class="btn btn-warning float-right mb-5 mr-5" data-toggle="modal" data-target="#exampleModal">Vote</button>
+
 </article>
 <div>
   <a class="btn btn-secondary" data-toggle="collapse" href="#${king.hound}" role="button" aria-expanded="false" aria-controls="collapseExample">
@@ -452,7 +475,7 @@
 
     function voteTemplate(vote) {
         return `
-        <iframe class="shadow rounded" src="${vote.form}" width="100%" height="800" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+        <iframe class="shadow rounded" src="${vote.form}" width="100%" height="750" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
         `
     }
 

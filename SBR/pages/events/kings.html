@@ -430,13 +430,14 @@
 <div class="uk-comment-body">
       <p>${king.message}</p>
   </div>
+  <h1></h1>
   <br>
   <button type="button" class="btn btn-warning float-right mb-5 mr-5" data-toggle="modal" data-target="#exampleModal">Vote</button>
 
 </article>
 <div>
-  <a class="btn btn-secondary" data-toggle="collapse" href="#${king.hound}" role="button" aria-expanded="false" aria-controls="collapseExample">
-    View Votes and Comments
+  <a class="btn btn-secondary" data-toggle="collapse" href="#${king.hound}" role="button" aria-expanded="false" aria-controls="collapseExample" id="comment">
+    View Comments (${king.comment.length})
   </a>
   <div class="collapse" id="${king.hound}">
   <div class="card card-body">
@@ -456,11 +457,15 @@
          
                 `).join("")
             }
-            </div>
+
+            
+    </div>
+    
   </div>
 </div>
 <br>
 <hr>
+
         `
     }
 

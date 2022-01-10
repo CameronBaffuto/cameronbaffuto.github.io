@@ -158,21 +158,24 @@
 <br> -->
 
 <div class="container">
-<div class="hearts py-3">
+<div class="hearts py-3 rounded">
      <div class="overlayWhite w-75 mx-auto">
     <h1 class="text-center"><strong><i class="fas fa-heart red"></i> 2022 Sweetheart Waddle <i class="fas fa-heart red"></i></strong></h1>
     <br>
+
     <div class="container">
         <div class="row justify-content-center">
 
             <div class="col text-center">
+                <h3 id="countdown"></h3>
                 <h5>Saturday, Febuary 19th, 2022</h5>
                 <h5>Ocala, FL</h5>
-                <a class="btn btn-secondary btn-lg" href="./pages/events/events.html" role="button">Get your Ticket</a>
+                <a class="btn btn-secondary" href="./pages/events/events.html" role="button">Get your Ticket</a>
+				<a class="btn btn-warning my-3" href="./pages/events/kings.html" role="button">Vote for King and Queen</a>
             </div>
-   
       </div>
     </div>  
+
    </div>
 </div>
 </div>	
@@ -301,5 +304,27 @@
 <script> var _ctct_m = "aed0a343e90571c9f25cea5d749d83f3"; </script>
 <script id="signupScript" src="//static.ctctcdn.com/js/signup-form-widget/current/signup-form-widget.min.js" async defer></script>
 <!-- End Constant Contact Active Forms -->
+
+<script>
+
+var countdown = document.getElementById('countdown');
+        var countDownDate = new Date("Oct 18, 2022 00:00:00").getTime();
+        var x = setInterval(function() {
+            var now = new Date().getTime();
+            var distance = countDownDate - now;
+            var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+            var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+            var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+            var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+            countdown.innerHTML = days + "d " + hours + "h "
+            + minutes + "m " + seconds + "s ";
+            if (distance < 0) {
+                clearInterval(x);
+                countdown.innerHTML = "EXPIRED";
+            }
+        }, 1000);
+
+</script>
+
 </body>
 </html>

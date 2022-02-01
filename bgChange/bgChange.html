@@ -1,0 +1,31 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <title>BG Changer</title>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  
+        <style>
+            .outline  {
+                border-style: solid;
+                background-color: #fff;
+            }
+        </style>
+  </head>
+  <body>
+      
+    <div class="container outline p-3 mt-5 text-center">
+        <h1>Choose Color</h1>
+        <input type="color" id="color">
+    </div>
+
+    <script>
+        var color = document.getElementById('color');
+        color.addEventListener('change', function(){
+            document.body.style.backgroundColor = color.value;
+        });
+    </script>
+  </body>
+</html>

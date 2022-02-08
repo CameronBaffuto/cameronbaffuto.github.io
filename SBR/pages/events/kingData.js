@@ -12,13 +12,13 @@ const kingData = [
         comment: [
             {
                 name: "Test",
-                message: "Test Comment",
+                message: "Test Comment 1",
                 amount: 280,
             },
             {
                 name: "Test",
-                message: "Test Comment",
-                amount: 151,
+                message: "Test Comment 2",
+                amount: 551,
             }
           ],
     },
@@ -35,12 +35,12 @@ const kingData = [
         comment: [
             {
                 name: "Test",
-                message: "Test Comment",
+                message: "Test Comment 1",
                 amount: 280,
             },
             {
                 name: "Test",
-                message: "Test Comment",
+                message: "Test Comment 2",
                 amount: 151,
             }
           ],
@@ -58,17 +58,17 @@ const kingData = [
         comment: [
             {
                 name: "Test",
-                message: "Test Comment",
-                amount: 280,
-            },
-            {
-                name: "Test",
-                message: "Test Comment",
+                message: "Test Comment 1",
                 amount: 151,
             },
             {
                 name: "Test",
-                message: "Test Comment",
+                message: "Test Comment 2",
+                amount: 351,
+            },
+            {
+                name: "Test",
+                message: "Test Comment 3",
                 amount: 151,
             }
           ],

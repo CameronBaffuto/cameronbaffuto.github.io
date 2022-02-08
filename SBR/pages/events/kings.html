@@ -469,6 +469,11 @@
         `
     }
 
+
+    kingData.sort(function(a, b) {
+            return b.votes - a.votes;
+        });	
+
     document.getElementById("kings").innerHTML = `
       ${kingData.map(waddleCardTemplate).join('')}
   `

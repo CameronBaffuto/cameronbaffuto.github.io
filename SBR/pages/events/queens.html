@@ -406,18 +406,23 @@
     <button class="btn btn-default ml-auto" data-toggle="collapse" href="#${queen.hound}">
       <span style="font-size: 2em; color: Tomato;"><i class="fas fa-times-circle"></i></span>
     </button>
-    ${queen.comment.map
-                (com => `
-                <div class="card w-100">
-                  <div class="card-body">
-                  <h4 class="card-title bold">${com.name}</h4>
-                  <p class="card-text">${com.message}</p>
-                  <h3 class="text-success bold float-right">$${com.amount}</h3>
-                  </div>
-                </div>
-         
-                `).join("")
-            }
+    ${fetch("https://opensheet.elk.sh/1raeZNachQKDkQDjoCIavVIeS6UO42CRN_VNYQgQBZIk/dog")
+    .then(res => res.json())
+    .then(res => {
+       user.map(user => {
+        return `
+        <div class="card w-100">
+            <div class="card-body">
+            <h4 class="card-title bold">${user.name}</h4>
+            <p class="card-text">${user.message}</p>
+            <h3 class="text-success bold float-right">$${user.amount}</h3>
+            </div>
+          </div>
+        
+        `
+      }).join("");})
+      
+    }
   </div>
 </div>
 <br>
@@ -443,6 +448,47 @@
       ${voteForm.map(voteTemplate)}
   `
 
+//   const getJSON = async url => {
+//   const response = await fetch(url);
+//   return response.json(); // get JSON from the response 
+// }
+
+//   async function load() {
+//     let url = 'https://opensheet.elk.sh/1raeZNachQKDkQDjoCIavVIeS6UO42CRN_VNYQgQBZIk/dog';
+//     let obj = await (await fetch(url)).json();
+//     console.log(obj);
+// }
+
+// load();
+
+fetch("https://opensheet.elk.sh/1raeZNachQKDkQDjoCIavVIeS6UO42CRN_VNYQgQBZIk/dog")
+    .then(res => res.json())
+    .then(res => {
+      //this.staffs = res.data;
+      console.log(res.data);
+    })
+    .catch(err => console.log(err));
+
+
+    function parseURLParams(url) {
+    var queryStart = url.indexOf("?") + 1,
+        queryEnd   = url.indexOf("#") + 1 || url.length + 1,
+        query = url.slice(queryStart, queryEnd - 1),
+        pairs = query.replace(/\+/g, " ").split("&"),
+        parms = {}, i, n, v, nv;
+
+    if (query === url || query === "") return;
+
+    for (i = 0; i < pairs.length; i++) {
+        nv = pairs[i].split("=", 2);
+        n = decodeURIComponent(nv[0]);
+        v = decodeURIComponent(nv[1]);
+
+        if (!parms.hasOwnProperty(n)) parms[n] = [];
+        parms[n].push(nv.length === 2 ? v : null);
+    }
+    return parms;
+}
     </script>
   </body>
 </html>

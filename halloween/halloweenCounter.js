@@ -1,4 +1,6 @@
-let countDownDate = new Date("Oct 31, 2022 00:00:00").getTime();
+let currYear = new Date().getFullYear();
+
+let countDownDate = new Date(`Oct 31, ${currYear} 00:00:00`).getTime();
 
 // Update the count down every 1 second
 let x = setInterval(function () {
@@ -22,6 +24,6 @@ let x = setInterval(function () {
     // If the count down is finished, write some text
     if (distance < 0) {
         clearInterval(x);
-        document.getElementById("demo").innerHTML = "EXPIRED";
+        document.getElementById("demo").innerHTML = "Happy Halloween!";
     }
 }, 1000);
